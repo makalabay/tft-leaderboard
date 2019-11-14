@@ -1,0 +1,13 @@
+<div local-class='container'>
+    <div local-class='header'>
+        <h1>{{this.user.summName}}</h1>
+    </div>
+    <div local-class='body'>
+        {{#each this.user.stats as |stat|}}
+            <span local-class='stat-block'>
+                <div local-class='stat-value'>{{stat.value}}</div>
+                <div local-class='stat-title'>{{stat.title}}</div>
+            </span>
+        {{/each}}
+    </div>
+</div>
